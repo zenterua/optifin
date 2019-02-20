@@ -9,7 +9,6 @@ import { AppRoutingModule } from './app-routing-module';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
-import { ExampleHeaderComponent } from './share/calendar/calendar.component';
 import {  MatAutocompleteModule,
   MatBadgeModule,
   MatBottomSheetModule,
@@ -46,7 +45,6 @@ import {  MatAutocompleteModule,
   MatTooltipModule,
   MatTreeModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { CalendarComponent } from './share/calendar/calendar.component';
 import { UbersichtComponent } from './ubersicht/ubersicht.component';
 import { RechnerLinksComponent } from './rechner-links/rechner-links.component';
 import { ProfileinstellungenComponent } from './profileinstellungen/profileinstellungen.component';
@@ -66,14 +64,12 @@ import {HttpClientModule} from '@angular/common/http';
     RechnerLinksComponent,
     ProfileinstellungenComponent,
     KontakAndSupportComponent,
-    CalendarComponent,
-    ExampleHeaderComponent,
     UbersichtComponent,
     RechnerLinksComponent,
     KontakAndSupportComponent,
     LoginComponent,
   ],
-  entryComponents: [ExampleHeaderComponent],
+  entryComponents: [],
   imports: [
     BrowserModule,
     AppRoutingModule,
