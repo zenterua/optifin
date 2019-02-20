@@ -1,0 +1,15 @@
+{
+  "/api/*": {
+    "target": "https://crmintern.optifin.at/webservice.php",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/api2/*": {
+    "target": "https://crmintern.optifin.at/webservice.php",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+
+}

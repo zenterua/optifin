@@ -1,0 +1,69 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 4px rgba(0,0,0,.07);
+  z-index: 10;
+}
+
+header .headerFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 15px 0;
+}
+
+#logo {
+  max-width: 120px;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  transition: opacity .25s linear;
+}
+
+.logout {
+  position: relative;
+  cursor: pointer;
+}
+
+.logout img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  max-width: 18px;
+  height: auto;
+  transform: translateY(-50%);
+
+}
+
+.logout span {
+  display: inline-block;
+  padding: 10px 0 10px 25px;
+  font-size: 13px;
+  line-height: 16px;
+  transition: color .25s linear;
+}
+
+
+/*HOVER*/
+@media (min-width: 991px) {
+  .logout:hover {
+    color: #225175;
+  }
+  #logo:hover {
+    opacity: .8;
+  }
+}
+
+/*Media*/
+@media (max-width: 991px) {
+  header {
+    height: 60px;
+  }
+}

@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="mainContentWrapper flexAlignCenter">
+        <h2 class="h2 as">LOGIN ACCOUNT</h2>
+        <div class="emptySpace55"></div>
+
+        <form class="loginForm" [formGroup]="form" (ngSubmit)="onSubmit();" [ngClass]="{'loginError': loginError === true}">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <label class="label">
+                <input type="text" placeholder="Enter your E-mail" class="simpleInput style2" formControlName="email" [ngClass]="{'errorInput': form.get('email').invalid && form.get('email').touched}">
+                <span class="inputBorder"></span>
+
+                <span class="errorsWrapper">
+                  <span *ngIf="form.get('email').invalid && form.get('email').touched">E-mail incorrect.</span>
+                </span>
+              </label>
+            </div>
+            <div class="col-sm-6 col-sm-offset-3">
+              <label class="label">
+                <input type="password" placeholder="Enter your Password" class="simpleInput style2" formControlName="pass" [ngClass]="{'errorInput': form.get('pass').invalid && form.get('pass').touched}" >
+                <span class="inputBorder"></span>
+
+                <span class="errorsWrapper">
+                  <span *ngIf="form.get('pass').invalid && form.get('pass').touched">Password cannot be empty.</span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="errorsWrapper mainError">
+            <p *ngIf="loginError === true">Wrong E-mail or password, please check and try again</p>
+          </div>
+
+          <div class="emptySpace10"></div>
+          <button type="submit" class="button buttonStyle2">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

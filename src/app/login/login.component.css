@@ -1,0 +1,51 @@
+.flexAlignCenter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginForm {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.loginForm .labelTitle {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.errorsWrapper {
+  display: block;
+  color: #cb3837;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: italic;
+  text-align: left;
+}
+
+.errorsWrapper span {
+  display: block;
+  margin: 5px 0;
+}
+
+.loginError .simpleInput,
+.errorInput {
+  border-color: #cb3837;
+}
+
+.loginError .inputBorder,
+.simpleInput.errorInput + .inputBorder {
+  display: none;
+}
+
+.mainError {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.mainError span {
+  display: inline-block;
+}
